@@ -1,3 +1,5 @@
+//This is my custom implemetation of what we use in terminal as cat command that is a custom made file reader purely made from system calls.
+
 #include<unistd.h>
 #include<fcntl.h>
 #include<stdlib.h>
