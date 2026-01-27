@@ -1,3 +1,6 @@
+//This program implements what we know as a wc command in linux using only the systeam calls words count is not implemented but lines and bytes are
+//implemented 
+
 #include<stdlib.h>
 #include<unistd.h>
 #include<fcntl.h>
