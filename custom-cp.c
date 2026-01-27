@@ -1,3 +1,5 @@
+//This is a custom implementation of cp command u find in linux or unix based terminals executed purely through system calls(not optimized).
+
 #include<unistd.h>
 #include<fcntl.h>
 #include<stdlib.h>
