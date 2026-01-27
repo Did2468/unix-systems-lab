@@ -1,3 +1,5 @@
+//This is my attempt to create what happends underneath a shell when we enter a command,though basic will improve it in next versions
+
 #include<stdlib.h>
 #include<unistd.h>
 #include<fcntl.h>
