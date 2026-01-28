@@ -1,6 +1,6 @@
 //This here is a v2 of previous one which runs in a loop and works as a shell. to come out just ctrl+c your way out.I know still there are optimizations left to do
-//like we are not freeing the heap data and it will run okay but if the comands are too many it will eat up my ram and lead to memory leak.
-//also commands like cd and exit wont work so have to hardcode them cause execvp doesnt supprt them.
+//like cd and exit wont work so have to hardcode them cause execvp doesnt supprt them.
+
 
 #include<stdlib.h>
 #include<unistd.h>
@@ -60,6 +60,13 @@ int main()
 		{	
 			wait(NULL);
 			//execv("./shellc",NULL);
+			int i =0;
+			while(cmds[i]!=NULL)
+			{
+				free(cmds[i]);
+				i++;
+			}
+			free(cmds);
 		}
 	}
 	return 0;
