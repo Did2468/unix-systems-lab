@@ -1,3 +1,5 @@
+//This here is a v2 of previous one which runs in a loop and works as a shell. to come out just ctrl+c your way out.
+
 #include<stdlib.h>
 #include<unistd.h>
 #include<fcntl.h>
